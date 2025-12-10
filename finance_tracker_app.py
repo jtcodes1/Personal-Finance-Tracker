@@ -338,6 +338,7 @@ def main():
         st.session_state.transactions = load_initial_data()
 
     df = st.session_state.transactions
+    filtered_df = df.copy()
     
     # App Header
     st.title("Personal Finance Tracker")
